@@ -1,0 +1,13 @@
+<header>
+    header <br>
+    <a routerLink="hello">Hello</a><br>
+    <a routerLink="about">About</a>
+</header>
+<h2>Product List Component</h2>
+<app-product></app-product>
+<hr />
+<h2>Product Add Component</h2>
+<app-add (createProduct)="onHandleAdd($event)"></app-add>
+<hr />
+<h2>Router Outlet</h2>>
+<router-outlet></router-outlet>
