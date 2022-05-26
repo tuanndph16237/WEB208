@@ -7,7 +7,6 @@ import data from './data';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'WEB208';
   productList: IProduct[] = data;
 
   onHandleAdd(product: any) {

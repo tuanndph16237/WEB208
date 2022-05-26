@@ -1,11 +1,11 @@
-<table class="table">
+<table class="table table-bordererd">
     <thead>
         <tr>
-            <th scope="col">#</th>
-            <th scope="col">Product Name</th>
-            <th scope="col">Price</th>
-            <th scope="col">status</th>
-            <th scope="col"></th>
+            <th>#</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Status</th>
+            <th></th>
         </tr>
     </thead>
     <tbody>
@@ -15,12 +15,10 @@
             <td>{{ product.price }}</td>
             <td>{{ product.status ? "Còn hàng" : "hết hàng" }}</td>
             <td>
-                <button class="btn btn-danger">
-                Delete
-              </button>
-                <button class="btn btn-info ms-1">
-                Detail
-              </button>
+                <button class="btn btn-danger" (click)="onHandleRemove(product.id!)">
+          Delete
+        </button>
+                <button class="btn btn-info ms-1">Detail</button>
             </td>
         </tr>
     </tbody>
