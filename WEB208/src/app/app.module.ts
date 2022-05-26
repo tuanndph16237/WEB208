@@ -13,7 +13,11 @@ import { ProductAddComponent } from './component/product-add/product-add.compone
 import { ProductDetailComponent } from './component/product-detail/product-detail.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
-import { HomeComponent } from './pages/home/home.component'
+import { HomeComponent } from './pages/home/home.component';
+import { HeaderComponent } from './component/header/header.component';
+import { RouterModule } from '@angular/router';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,13 +27,16 @@ import { HomeComponent } from './pages/home/home.component'
     ProductAddComponent,
     ProductDetailComponent,
     NotFoundComponent,
-    HomeComponent
+    HomeComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
